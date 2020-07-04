@@ -1,0 +1,28 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.negative-row-margin {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
+.over-box {
+  height: 138px;
+}
+
+.fa-facebook-square,
+.fa-google,
+.fa-shopify,
+.fa-amazon {
+  font-size: 45px;
+}
+
+.trans-icon {
+  line-height: 40px;
+}
+
+.productName {
+  line-height: 45px;
+}
+/*# sourceMappingURL=index.css.map */

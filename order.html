@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Order</title>
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+    <link
+      href="./stylesheets/fontawesome-free-5.13.1-web/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold">
+      <a class="navbar-brand ml-5" href="#">Shoptime</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ml-6">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item active ml-6">
+            <a class="nav-link" href="order.html"
+              >ORDERS<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item ml-6">
+            <a class="nav-link" href="product.html">PRODUCT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="negative-row-margin">
+      <!--header details-->
+      <div class="container-fluid mt-5">
+        <div class="row no-gutters">
+          <div>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="defaultCheck1"
+            />
+            <div class="btn-group ml-3">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-tags"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Select All</a>
+                <a class="dropdown-item" href="#">Paid</a>
+                <a class="dropdown-item" href="#">Unpaid</a>
+                <a class="dropdown-item" href="#">Shipping</a>
+                <a class="dropdown-item" href="#">Done</a>
+              </div>
+            </div>
+          </div>
+          <div class="ml-auto">
+            <div class="btn-group">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                EDIT SECTION
+              </button>
+              <div class="dropdown-menu">
+                <div class="pl-2">
+                  <input type="checkbox" value="" id="Order ID" />
+                  <label for="Order ID">Order ID</label><br />
+
+                  <input type="checkbox" value="" id="Customer" />
+                  <label for="Customer">Customer</label><br />
+
+                  <input type="checkbox" value="" id="Product List" />
+                  <label for="Product List">Product List</label><br />
+
+                  <input type="checkbox" value="" id="Total" />
+                  <label for="Total">Total</label><br />
+
+                  <input type="checkbox" value="" id="Add to Cart" />
+                  <label for="Add to Cart">Add to Cart</label><br />
+
+                  <input type="checkbox" value="" id="Check-out" />
+                  <label for="Check-out">Check-out</label><br />
+
+                  <input type="checkbox" value="" id="Address" />
+                  <label for="Address">Address</label><br />
+
+                  <input type="checkbox" value="" id="Phone" />
+                  <label for="Phone">Phone</label><br />
+
+                  <input type="checkbox" value="" id="Emaill" />
+                  <label for="Emaill">Emaill</label><br />
+
+                  <input type="checkbox" value="" id="Status" />
+                  <label for="Status">Status</label><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--table-->
+      <div class="container-fluid my-5 table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Customer</th>
+              <th scope="col">Product List</th>
+              <th scope="col">Total</th>
+              <th scope="col">Add to Cart</th>
+              <th scope="col">Check-out</th>
+              <th scope="col">Address</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" value="" id="customer" />
+                <label for="customer">Ian Medina</label><br />
+              </th>
+              <td>
+                <p>Vestibulum.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£1,400</p>
+                  <p>1</p>
+                </div>
+              </td>
+              <td>£1,400</td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>386 Windler Drives Apt. 358</td>
+              <td>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-danger dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Action
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Paid</a>
+                    <a class="dropdown-item" href="#">Unpaid</a>
+                    <a class="dropdown-item" href="#">Shipping</a>
+                    <a class="dropdown-item" href="#">Done</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" value="" id="customer" />
+                <label for="customer">Manuel Stephens</label><br />
+              </th>
+              <td>
+                <p>Donec facili.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£400</p>
+                  <p>1</p>
+                </div>
+              </td>
+              <td>£400</td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>531 Orval Mission Suite 134</td>
+              <td>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-danger dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Action
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Paid</a>
+                    <a class="dropdown-item" href="#">Unpaid</a>
+                    <a class="dropdown-item" href="#">Shipping</a>
+                    <a class="dropdown-item" href="#">Done</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" value="" id="customer" />
+                <label for="customer">Daisy Reynolds</label><br />
+              </th>
+              <td>
+                <p>Curabitur lo.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£1400</p>
+                  <p>1</p>
+                </div>
+                <hr />
+                <p>Donec facili.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£800</p>
+                  <p>1</p>
+                </div>
+              </td>
+              <td>$2,200</td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>38 Juston Islands Apt. 012</td>
+              <td>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-danger dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Action
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Paid</a>
+                    <a class="dropdown-item" href="#">Unpaid</a>
+                    <a class="dropdown-item" href="#">Shipping</a>
+                    <a class="dropdown-item" href="#">Done</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" value="" id="customer" />
+                <label for="customer">Daisy Reynolds</label><br />
+              </th>
+              <td>
+                <p>Lorem ipsum.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£1,400</p>
+                  <p>1</p>
+                </div>
+              </td>
+              <td>£1,400</td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>38 Juston Islands Apt. 012</td>
+              <td>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-danger dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Action
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Paid</a>
+                    <a class="dropdown-item" href="#">Unpaid</a>
+                    <a class="dropdown-item" href="#">Shipping</a>
+                    <a class="dropdown-item" href="#">Done</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" value="" id="customer" />
+                <label for="customer">Ian Medina</label><br />
+              </th>
+              <td>
+                <p>Vestibulum.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£1,400</p>
+                  <p>1</p>
+                </div>
+                <hr />
+                <p>Fusce vehicu.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£800</p>
+                  <p>1</p>
+                </div>
+              </td>
+              <td>£2,200</td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>386 Windler Drives Apt. 358</td>
+              <td>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-danger dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Action
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Paid</a>
+                    <a class="dropdown-item" href="#">Unpaid</a>
+                    <a class="dropdown-item" href="#">Shipping</a>
+                    <a class="dropdown-item" href="#">Done</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" value="" id="customer" />
+                <label for="customer">Leo Coolman</label><br />
+              </th>
+              <td>
+                <p>Vestibulum.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£1,400</p>
+                  <p>1</p>
+                </div>
+              </td>
+              <td>£1,400</td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>234 King road. 007</td>
+              <td>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-danger dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Action
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Paid</a>
+                    <a class="dropdown-item" href="#">Unpaid</a>
+                    <a class="dropdown-item" href="#">Shipping</a>
+                    <a class="dropdown-item" href="#">Done</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" value="" id="customer" />
+                <label for="customer">Mary Smith</label><br />
+              </th>
+              <td>
+                <p>Vestibulum.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£1,400</p>
+                  <p>1</p>
+                </div>
+                <hr />
+                <p>Fusce vehicu.</p>
+                <div class="d-flex justify-content-between">
+                  <p>£800</p>
+                  <p>1</p>
+                </div>
+              </td>
+              <td>£2,200</td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>
+                <p>
+                  2018/6/8
+                </p>
+                <p>13:39</p>
+              </td>
+              <td>386 Happy road Apt. 123</td>
+              <td>
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-danger dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Action
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Paid</a>
+                    <a class="dropdown-item" href="#">Unpaid</a>
+                    <a class="dropdown-item" href="#">Shipping</a>
+                    <a class="dropdown-item" href="#">Done</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--pagination-->
+      <div class="container-fluid">
+        <nav aria-label="Page navigation example d-flex ">
+          <ul class="pagination justify-content-end">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--Bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

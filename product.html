@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Order</title>
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+    <link
+      href="./stylesheets/fontawesome-free-5.13.1-web/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold">
+      <a class="navbar-brand ml-5" href="#">Shoptime</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ml-6">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item ml-6">
+            <a class="nav-link" href="order.html">ORDERS</a>
+          </li>
+          <li class="nav-item active ml-6">
+            <a class="nav-link" href="product.html"
+              >PRODUCT<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="negative-row-margin">
+      <!--header details-->
+      <div class="container-fluid mt-5">
+        <div class="row no-gutters">
+          <div>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="defaultCheck1"
+            />
+            <div class="btn-group ml-3">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                data-toggle="dropdown tooltip"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-placement="bottom"
+                title="Change status"
+              >
+                <i class="fas fa-tags"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Select All</a>
+                <a class="dropdown-item" href="#">Paid</a>
+                <a class="dropdown-item" href="#">Unpaid</a>
+                <a class="dropdown-item" href="#">Shipping</a>
+                <a class="dropdown-item" href="#">Done</a>
+              </div>
+            </div>
+          </div>
+          <div class="ml-auto">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                ADD NEW PRODUCT <i class="fas fa-plus"></i>
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        ADD NEW PRODUCT
+                      </h5>
+                      <button
+                        type="button"
+                        class="close text-white"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="bg-light" style="height: 115px;">
+                            <p class="pt-6 text-center">
+                              Drag an image or click here to upload…
+                            </p>
+                          </div>
+                          <div class="row mt-4 text-center">
+                            <div class="col-6 col-lg-4 mb-2">
+                              <img
+                                style="height: 126px;"
+                                src="https://images.unsplash.com/photo-1584642520442-5c5fbe4e7427?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                class="img-fluid"
+                                alt="Responsive image"
+                              />
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                              <img
+                                style="height: 126px;"
+                                src="https://images.unsplash.com/photo-1584642520442-5c5fbe4e7427?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                class="img-fluid"
+                                alt="Responsive image"
+                              />
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                              <img
+                                style="height: 126px;"
+                                src="https://images.unsplash.com/photo-1584642520442-5c5fbe4e7427?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                class="img-fluid"
+                                alt="Responsive image"
+                              />
+                            </div>
+                            <div class="col-6 col-lg-4 mb-2">
+                              <img
+                                style="height: 126px;"
+                                src="https://images.unsplash.com/photo-1584642520442-5c5fbe4e7427?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                class="img-fluid"
+                                alt="Responsive image"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <form>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1"
+                                >Product Discription</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="Vestibulum nec"
+                              />
+                            </div>
+
+                            <div class="form-group">
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                              ></textarea>
+                            </div>
+                            <h6>Price</h6>
+                            <div class="row">
+                              <div class="col-md-6 input-group pb-2">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">Original</div>
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inlineFormInput"
+                                />
+                              </div>
+                              <div class="col-md-6 input-group pb-2">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">Discount</div>
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inlineFormInput"
+                                />
+                              </div>
+                            </div>
+                            <h6 class="mt-4">Specification</h6>
+                            <div class="row">
+                              <div class="col-md-4 input-group pb-2">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">Size</div>
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inlineFormInputGroup"
+                                />
+                              </div>
+                              <div class="col-md-4 input-group pb-2">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">Color</div>
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inlineFormInputGroup"
+                                />
+                              </div>
+                              <div class="col-md-4 input-group pb-2">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">Inventory</div>
+                                </div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="inlineFormInputGroup"
+                                />
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-mdark"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-mdark">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--table-->
+      <div class="container-fluid my-5 table-responsive">
+        <table class="table table-striped mt-5">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Original</th>
+              <th scope="col">Size</th>
+              <th scope="col">Color</th>
+              <th scope="col">Inventory</th>
+              <th scope="col">Inventory</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <div class="d-flex">
+                  <input class="my-3" type="checkbox" value="" id="Order ID" />
+                  <img
+                    style="height: 50px; width: 50px;"
+                    src="https://images.unsplash.com/photo-1565127453543-ad97bbbba30d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt=""
+                    class="ml-2"
+                  />
+                  <p class="ml-2 productName">Mauris non tem.</p>
+                </div>
+              </th>
+              <td>£4,200</td>
+              <td>£100</td>
+              <td>
+                <div>
+                  <p class="p-3">L</p>
+                  <p class="p-3">M</p>
+                  <p class="p-3">S</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+                <hr />
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+                <hr />
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+                <hr />
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+                <hr />
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+              </td>
+              <td>
+                <div class="d-flex align-items-end">
+                  <button type="button" class="btn btn-success">
+                    PUBLISHED
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="d-flex">
+                  <input class="my-3" type="checkbox" value="" id="Order ID" />
+                  <img
+                    style="height: 50px; width: 50px;"
+                    src="https://images.unsplash.com/photo-1565127453543-ad97bbbba30d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt=""
+                    class="ml-2"
+                  />
+                  <p class="ml-2 productName">Mauris non tem.</p>
+                </div>
+              </th>
+              <td>£4,200</td>
+              <td>£100</td>
+              <td>
+                <div>
+                  <p class="p-3">L</p>
+                  <p class="p-3">M</p>
+                  <p class="p-3">S</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+                <hr />
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+                <hr />
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+                <hr />
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+                <hr />
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+              </td>
+              <td>
+                <div class="d-flex align-items-end">
+                  <button type="button" class="btn btn-success">
+                    PUBLISHED
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="d-flex">
+                  <input class="my-3" type="checkbox" value="" id="Order ID" />
+                  <img
+                    style="height: 50px; width: 50px;"
+                    src="https://images.unsplash.com/photo-1565127453543-ad97bbbba30d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    alt=""
+                    class="ml-2"
+                  />
+                  <p class="ml-2 productName">Curabitur lobo.</p>
+                </div>
+              </th>
+              <td>£4,200</td>
+              <td>£100</td>
+              <td>
+                <div>
+                  <p class="p-3">L</p>
+                  <p class="p-3">M</p>
+                  <p class="p-3">S</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+                <hr />
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+                <hr />
+                <div>
+                  <p>Gary</p>
+                  <p>Black</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+                <hr />
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+                <hr />
+                <div>
+                  <p>15</p>
+                  <p>20</p>
+                </div>
+              </td>
+              <td>
+                <div class="d-flex align-items-end">
+                  <button type="button" class="btn btn-success">
+                    PUBLISHED
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--Bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
